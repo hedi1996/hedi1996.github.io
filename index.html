@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Affaire Comprise</title>
+<style>
+:root{
+  --papier:#FDF2D9; --carte:#FFFAEC; --encre:#16304A; --encre-2:#3D5670;
+  --trait:#E3C088; --ocre:#C6843C;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --papier:#101C28; --carte:#16283A; --encre:#F3E7CE;
+         --encre-2:#C7B99C; --trait:#31506D; --ocre:#DDA05C; }
+}
+*{box-sizing:border-box}
+body{
+  margin:0; padding:64px 24px; background:var(--papier); color:var(--encre);
+  font:15px/1.7 ui-monospace, 'JetBrains Mono', Consolas, monospace;
+}
+main{max-width:640px; margin:0 auto}
+.marque{
+  font-size:12px; letter-spacing:.22em; text-transform:uppercase;
+  color:var(--ocre); font-weight:600; margin:0 0 12px;
+}
+h1{
+  font-size:clamp(28px,6vw,40px); line-height:1.1; margin:0 0 20px;
+  text-transform:uppercase; letter-spacing:.01em; font-weight:700;
+}
+p{color:var(--encre-2); max-width:60ch}
+.liens{
+  margin-top:40px; padding-top:24px; border-top:1px solid var(--trait);
+  display:flex; gap:20px; flex-wrap:wrap; font-size:14px;
+}
+a{color:var(--ocre); text-underline-offset:3px}
+</style>
+</head>
+<body>
+<main>
+  <p class="marque">Chaîne vidéo</p>
+  <h1>Affaire Comprise</h1>
+  <p>La finance et le business sont un jeu. Tu y joues déjà, et personne ne t'a
+     donné les règles.</p>
+  <p>Vidéos courtes en français, sur ce que les chiffres de l'économie changent
+     dans la vie de ceux qui les subissent.</p>
+  <div class="liens">
+    <a href="./confidentialite.html">Politique de confidentialité</a>
+    <a href="./conditions.html">Conditions d'utilisation</a>
+    <a href="mailto:affaire.comprise@gmail.com">Nous écrire</a>
+  </div>
+</main>
+</body>
+</html>
